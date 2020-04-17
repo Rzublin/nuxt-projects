@@ -1,3 +1,3 @@
 # vue-mastery-nuxt
 
-> Tutorial project following the lessons at Vue Mastery
+> Tutorial project following the lessons from Vue Mastery
