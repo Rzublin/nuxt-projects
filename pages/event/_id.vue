@@ -1,19 +1,24 @@
 <template>
   <div>
-    <h1>Events</h1>
+    <h1>Event #{{ id }}</h1>
   </div>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      id: this.$route.params.id
+    }
+  },
   head() {
     return {
-      title: 'List Events',
+      title: `Event #${this.id}`,
       meta: [
         {
           hid: 'description',
           name: 'description',
-          content: 'List all the exciting events in your neighborhood'
+          content: 'All the information about the event ' + this.id
         }
       ]
     }
